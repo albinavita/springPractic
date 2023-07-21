@@ -1,8 +1,7 @@
 package org.example;
 
-/**
- * @author Neil Alishev
- */
+import java.util.List;
+
 public interface Music {
-    String getSong();
+    List<String> getSong();
 }

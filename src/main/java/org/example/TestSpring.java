@@ -2,16 +2,15 @@ package org.example;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * @author Neil Alishev
- */
 public class TestSpring {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "applicationContext.xml"
         );
-        Computer computer = context.getBean("computer", Computer.class);
-        System.out.println(computer);
+
+        MusicPlayer player = context.getBean("musicPlayer", MusicPlayer.class);
+        player.playMusic(MusicGenre.CLASSICAL);
+        player.playMusic(MusicGenre.ROCK);
 
         context.close();
     }
