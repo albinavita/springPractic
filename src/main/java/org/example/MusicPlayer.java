@@ -21,7 +21,11 @@ public class MusicPlayer {
 
     public void playMusic(MusicGenre genre) {
         Random random = new Random();
-        // случайное целое число между 0 и 2
+        /*
+         *случайное целое число между 0 и 2
+         * для выбора номера песни из списка
+         */
+
         int randomNumber = random.nextInt(3);
 
         switch (genre) {

@@ -9,7 +9,7 @@ import java.util.List;
 public class ClassicalMusic implements Music {
 
     private List<String> songs = new ArrayList<>();
-
+    //блок инициализации
      {
         songs.add("Hungarian Rhapsody");
         songs.add("\"Symphony no. 5 in C Minor, op. 67\"");

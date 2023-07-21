@@ -8,7 +8,7 @@ import java.util.List;
 @Component
 public class RockMusic implements Music {
     List<String> songs = new ArrayList<>();
-    //блок инициализации
+
     {
         songs.add("\"Wind cries Mary");
         songs.add("Paint it black");

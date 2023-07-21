@@ -9,6 +9,7 @@ public class TestSpring {
         );
 
         MusicPlayer player = context.getBean("musicPlayer", MusicPlayer.class);
+        //выбираем случайные рок и класическую песни
         player.playMusic(MusicGenre.CLASSICAL);
         player.playMusic(MusicGenre.ROCK);
 
